@@ -13,7 +13,7 @@ const authenticateDeliverymanController =
   new AuthenticateDeliverymanController();
 
 routes.post("/clients", createClientController.handle);
-routes.post("/authenticate", authenticateClientController.handle);
+routes.post("/client/authenticate", authenticateClientController.handle);
 routes.post("/deliveryman", createDeliverymanController.handle);
 routes.post(
   "/deliveryman/authenticate",
