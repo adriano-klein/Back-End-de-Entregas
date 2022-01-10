@@ -4,6 +4,7 @@ import { AuthenticateClientController } from "./modules/accounts/authenticateCli
 import { AuthenticateDeliverymanController } from "./modules/accounts/authenticateDeliveryman/AuthenticateDeliverymanController";
 import { CreateClientController } from "./modules/clients/useCases/createClient/CreateClientController";
 import { CreateDeliveryController } from "./modules/deliveries/useCases/createDelivery/CreateDeliveryController";
+import { FindAllAvailableController } from "./modules/deliveries/useCases/findAllAvailable/findAllAvailableController";
 import { CreateDeliverymanController } from "./modules/deliveryman/useCases/CreateDeliverymanController";
 
 const routes = Router();
@@ -14,6 +15,7 @@ const createDeliverymanController = new CreateDeliverymanController();
 const authenticateDeliverymanController =
   new AuthenticateDeliverymanController();
 const createDeliveryController = new CreateDeliveryController();
+const findAllAvailableController = new FindAllAvailableController();
 
 routes.post("/clients", createClientController.handle);
 routes.post("/client/authenticate", authenticateClientController.handle);
@@ -27,5 +29,6 @@ routes.post(
   ensureAuthenticateCliente,
   createDeliveryController.handle
 );
+routes.get("/delivery/available", findAllAvailableController.handle);
 
 export { routes };
