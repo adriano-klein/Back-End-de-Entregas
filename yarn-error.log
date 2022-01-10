@@ -1,0 +1,41 @@
+Arguments: 
+  /usr/local/Cellar/node/17.3.0/bin/node /usr/local/Cellar/yarn/1.22.17_2/libexec/bin/yarn.js add typescript ts-node-dev @types/express @types/jsonwebtoken @types/brypt -D
+
+PATH: 
+  /Users/adrianoklein/.rvm/gems/ruby-2.6.5/bin:/Users/adrianoklein/.rvm/gems/ruby-2.6.5@global/bin:/Users/adrianoklein/.rvm/rubies/ruby-2.6.5/bin:/Users/adrianoklein/.serverless/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/adrianoklein/.rvm/gems/ruby-2.6.5/bin:/Users/adrianoklein/.rvm/gems/ruby-2.6.5@global/bin:/Users/adrianoklein/.rvm/rubies/ruby-2.6.5/bin:/Users/adrianoklein/.serverless/bin:/Users/adrianoklein/opt/anaconda3/bin:/Users/adrianoklein/opt/anaconda3/condabin:/Users/adrianoklein/.zplugin/polaris/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Users/adrianoklein/.rvm/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Users/adrianoklein/.rvm/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  17.3.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@types%2fbrypt: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:67029:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:140883:22)
+      at Request.emit (node:events:390:28)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:141855:10)
+      at Request.emit (node:events:390:28)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:509:28)
+      at IncomingMessage.emit (node:events:402:35)
+      at endReadableNT (node:internal/streams/readable:1343:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "entregas_js",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
