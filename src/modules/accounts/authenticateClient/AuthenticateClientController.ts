@@ -10,6 +10,6 @@ export class AuthenticateClientController {
       password,
     });
 
-    return response.json({ result });
+    return response.json(result);
   }
 }
