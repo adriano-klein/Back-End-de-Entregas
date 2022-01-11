@@ -11,9 +11,7 @@ export class CreateClientUseCase {
     //TODO: validar se o cliente existe no banco
     const clientExists = await prisma.clients.findFirst({
       where: {
-        username: {
-          mode: "insensitive",
-        },
+        username,
       },
     });
     if (clientExists) {
