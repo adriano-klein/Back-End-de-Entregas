@@ -25,7 +25,7 @@ export class AuthenticateDeliverymanUseCase {
     }
 
     //TODO: Generate Token
-    const token = sign({ username }, "2163a209a375cb1073c2786a14903ef4", {
+    const token = sign({ username }, "2163a209a375cb1073c2786a14903ef44", {
       subject: deliverymanExists.id,
       expiresIn: "1d",
     });
