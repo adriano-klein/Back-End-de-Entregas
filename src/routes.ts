@@ -6,7 +6,7 @@ import { AuthenticateDeliverymanController } from "./modules/accounts/authentica
 import { CreateClientController } from "./modules/clients/useCases/createClient/CreateClientController";
 import { CreateDeliveryController } from "./modules/deliveries/useCases/createDelivery/CreateDeliveryController";
 import { FindAllAvailableController } from "./modules/deliveries/useCases/findAllAvailable/findAllAvailableController";
-import { CreateDeliverymanController } from "./modules/deliveryman/useCases/CreateDeliverymanController";
+import { CreateDeliverymanController } from "./modules/deliveryman/useCases/createDeliveryman/CreateDeliverymanController";
 import { UpdateDeliverymanController } from "./modules/deliveries/useCases/updateDeliveryman/usecases/UpdateDeliverymanController";
 import { FindAllDeliveriesController } from "./modules/clients/useCases/deliveries/FindAllAvailableController";
 

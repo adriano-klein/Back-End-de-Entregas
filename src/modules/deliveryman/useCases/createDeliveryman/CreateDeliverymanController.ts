@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { CreateDeliverymanUseCase } from "./createDeliveryman/CreateDeliveryman";
+import { CreateDeliverymanUseCase } from "./CreateDeliverymanUseCase";
 
 export class CreateDeliverymanController {
   async handle(request: Request, response: Response) {
